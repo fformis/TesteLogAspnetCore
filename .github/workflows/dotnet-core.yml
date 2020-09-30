@@ -16,11 +16,11 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-        uses: ./
-        run: dotnet restore
+      uses: ./
+      run: dotnet restore
     - name: Build      
-        uses: ./
-        run: dotnet build --configuration Release --no-restore
+      uses: ./
+      run: dotnet build --configuration Release --no-restore
     - name: Publish      
-        uses: ./
-        run: dotnet publish --configuration Release -o netcore
+      uses: ./
+      run: dotnet publish --configuration Release -o netcore
