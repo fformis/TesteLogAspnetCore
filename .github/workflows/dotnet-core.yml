@@ -16,8 +16,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore ./TesteLogAspNetCore.sln
+      run: dotnet restore ./TesteLogAspNetCore/TesteLogAspNetCore.sln
     - name: Build      
-      run: dotnet build ./TesteLogAspNetCore.sln --configuration Release --no-restore
+      run: dotnet build ./TesteLogAspNetCore/TesteLogAspNetCore.sln --configuration Release --no-restore
     - name: Publish    
-      run: dotnet publish ./TesteLogAspNetCore.sln --configuration Release -o netcore
+      run: dotnet publish ./TesteLogAspNetCore/TesteLogAspNetCore.sln --configuration Release -o netcore
