@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TesteLogAspNetCore/TesteLog4Net/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0
